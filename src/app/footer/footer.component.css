@@ -1,0 +1,70 @@
+#footerContainer {
+  position: absolute;
+  bottom: 0;
+  height: 6%;
+  width: 100%;
+  background-color: rgba(245,245,245,0.5);
+  outline: 0.1vh solid rgba(119,118,116,0.4);
+  display: flex;
+  justify-content: space-between;
+}
+
+.foterLogoContainer {
+  width: 16%;
+  height: 100%;
+  background-color: rgba(40,100,250,0.0);
+  margin: 0 0.33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: auto;
+}
+
+#kappaLogo {
+  width: 100%;
+  height: 60%;
+  background: rgba(100,200,200,0.0) url("/assets/kappaLogo.svg") no-repeat center/contain;
+}
+
+.iconsContainer {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(40,100,250,0.0);
+  margin: 0 0.33%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.iconContainerForFlex {
+  width: 33%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.iconContainerForFlex:hover{
+  background-color: rgba(210,201,194,0.2);
+  cursor: pointer;
+}
+
+
+.iconClass {
+  width: 100%;
+  height: 70%;
+}
+
+#paperLogo {
+  background: rgba(100,200,200,0) url("/assets/paperLogo.svg") no-repeat center/contain;
+}
+
+#githubLogo {
+  background: rgba(100,200,200,0) url("/assets/githubLogo.svg") no-repeat center/contain;
+}
+
+#mailLogo {
+  background: rgba(100,200,200,0) url("/assets/mailLogo.svg") no-repeat center/contain;
+}

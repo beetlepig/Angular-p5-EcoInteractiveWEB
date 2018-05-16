@@ -1,0 +1,63 @@
+.theContainer {
+  position: absolute;
+  width: 100%;
+  height: 8.5%;
+  background-color: rgba(245,245,245,0.5);
+  outline: 0.1vh solid rgba(119,118,116,0.4);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: center;
+
+}
+
+#logoContainer {
+  width: 99.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#logo {
+  width: 100%;
+  height: 75%;
+  background: rgba(100,200,200,0) url("/assets/logo-EcoInteractiveTwo.svg") no-repeat center/contain;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+
+.headerContainer {
+  width: 16%;
+  height: 100%;
+  background-color: rgba(40,100,250,0.0);
+  margin: 0 0.33%;
+  overflow: auto;
+}
+
+.textoMenu {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  padding-bottom: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  font-family: 'Effra', sans-serif;
+  font-weight: 900;
+  font-size: 0.9vw;
+  color: rgba(119,118,116,0.8);
+}
+
+.textoMenu:hover {
+  color: rgba(119,118,116,1);
+  cursor: pointer;
+}
+
+.activeLink {
+  box-shadow: 0 -2px 0 rgba(48,154,212,1) inset;
+}
+

@@ -1,0 +1,8 @@
+#videoContainer {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  outline: 0.5vh solid rgba(24,75,128,0.9);
+}

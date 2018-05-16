@@ -1,0 +1,37 @@
+#leftArrow {
+  position: fixed;
+  background: rgba(151,193,230,0.8);
+  top: 44%;
+  left: 2.6%;
+  width: 3.18%;
+  padding: 1.06%;
+  border-radius: 100%;
+  border: 3px solid rgba(49,154,212,0.9);
+}
+
+#leftArrow .arrowContainer {
+  width: 100%;
+  padding-top: 100%;
+  background: rgba(100,200,200,0) url("/assets/leftArrow.svg") no-repeat center/contain;
+}
+
+#rightArrow {
+  position: fixed;
+  background: rgba(151,193,230,0.8);
+  top: 44%;
+  right: 2.6%;
+  width: 3.18%;
+  padding: 1.06%;
+  border-radius: 100%;
+  border: 3px solid rgba(49,154,212,0.9);
+}
+
+#rightArrow .arrowContainer {
+  width: 100%;
+  padding-top: 100%;
+  background: rgba(100,200,200,0) url("/assets/rightArrow.svg") no-repeat center/contain;
+}
+
+.circulin:hover{
+  box-shadow: 2px 3px 8px rgba(20,20,100,0.3);
+}

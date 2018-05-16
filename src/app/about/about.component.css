@@ -1,0 +1,42 @@
+.containerGeneralAbout {
+  position: absolute;
+  top: 20%;
+  left: 16.5%;
+  width: 67%;
+  height: 60%;
+  background: rgba(10,50,120,0.0);
+}
+
+.mainText {
+  margin: auto;
+  font-family: 'Effra', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5vw;
+  color: rgba(47,156,215,0.9);
+}
+
+.logoAbout {
+  width: 100%;
+  height: 40%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  background: rgba(100,200,200,0.0) url("/assets/logo-EcoInteractive.svg") no-repeat center/contain;
+}
+.logoAboutTwo {
+  position: absolute;
+  left: 37.5%;
+  width: 25%;
+  height: 40%;
+  background: rgba(109,118,116,0.0) url("/assets/logo-EcoInteractive.svg") no-repeat center/contain;
+}
+
+.secondText {
+  margin: auto;
+  font-family: 'Effra', sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  text-align-last: center;
+  font-size: 2vw;
+  color: rgba(109,118,116,0.9);
+}
