@@ -33,9 +33,16 @@ export class FlechasComponent implements OnInit {
         break;
       case 'proyecto':
         if (dir === 'der') {
-         // this.router.navigate(['proyecto']);
+          this.router.navigate(['prototipo']);
         } else if (dir === 'iz') {
           this.router.navigate(['about']);
+        }
+        break;
+      case 'prototipo':
+        if (dir === 'der') {
+          // this.router.navigate(['prototipo']);
+        } else if (dir === 'iz') {
+          this.router.navigate(['proyecto']);
         }
         break;
     }

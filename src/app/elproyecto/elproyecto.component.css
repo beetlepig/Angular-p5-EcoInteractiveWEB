@@ -1,0 +1,44 @@
+.containerProject {
+  position: absolute;
+  left: 8.67%;
+  top: 15%;
+  width: 82.67%;
+  height: 70%;
+  background-color: rgba(40,200,1000,0.0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infoContainer {
+  width: 40%;
+  background-color: rgba(20,200,50,0.0);
+}
+
+.textInfo {
+  margin: auto;
+  margin-top: 5%;
+  color: rgba(119,118,116,0.9);
+  font-family: 'Effra', sans-serif;
+  font-weight: 700;
+  font-size: 1.6vw;
+  text-align: justify;
+}
+
+#queEsSmurfitText {
+  margin: auto;
+  color: rgba(47,156,215,0.9);
+  font-family: 'Effra', sans-serif;
+  font-weight: 700;
+  font-size: 2.75vw;
+  text-align: center;
+}
+#queEsEcoText {
+  margin: auto;
+  color: rgba(47,156,215,0.9);
+  font-family: 'Effra', sans-serif;
+  font-weight: 700;
+  font-size: 2.4vw;
+  text-align: center;
+}

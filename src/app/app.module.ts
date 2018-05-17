@@ -11,12 +11,14 @@ import { FlechasComponent } from './flechas/flechas.component';
 import { AboutComponent } from './about/about.component';
 import { ElproyectoComponent } from './elproyecto/elproyecto.component';
 import { BackgroundComponent } from './background/background.component';
+import { PrototipoComponent } from './prototipo/prototipo.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: VideoHomeComponent,  data: { state: 'home'} },
   { path: 'about', component: AboutComponent,  data: { state: 'about'}},
   { path: 'proyecto', component: ElproyectoComponent,  data: { state: 'proyecto'}},
+  { path: 'prototipo', component: PrototipoComponent,  data: { state: 'prototipo'}},
 ];
 
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     FlechasComponent,
     AboutComponent,
     ElproyectoComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    PrototipoComponent
   ],
   imports: [
     BrowserModule,
