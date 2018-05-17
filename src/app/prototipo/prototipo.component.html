@@ -1,0 +1,12 @@
+<div class="contentContainer">
+  <div class="imagePlaceHolder">
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 0" class="imagenOne"></div>
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" class="imagenTwoOne"></div>
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" class="imagenTwoTwo"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeOne"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeTwo"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeThree"></div>
+  </div>
+  <h3 class="titleSlide">{{tituloSlide}}</h3>
+  <p class="textDescripcion">{{descripcionSlide}}</p>
+</div>
