@@ -53,6 +53,25 @@
   background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_3.svg") no-repeat center/contain;
 }
 
+.imagenThreeFour {
+  width: 40%;
+  height: 90%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_6.png") no-repeat center/contain;
+}
+
+.imagenThreeFive {
+  width: 10%;
+  height: 20%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_7.svg") no-repeat center/contain;
+}
+
+.imagenThreeSix {
+  width: 40%;
+  height: 90%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_8.png") no-repeat center/contain;
+}
+
+
 
 .titleSlide {
   margin: 1%;
