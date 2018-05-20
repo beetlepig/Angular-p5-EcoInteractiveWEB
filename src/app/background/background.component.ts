@@ -1,12 +1,15 @@
-import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, HostBinding, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import 'p5';
+import {fadeInAnimation} from '../_animations/fade-in.animation';
 
 @Component({
   selector: 'app-background',
   templateUrl: './background.component.html',
-  styleUrls: ['./background.component.css']
+  styleUrls: ['./background.component.css'],
+  animations: [fadeInAnimation]
 })
 export class BackgroundComponent implements OnInit, OnDestroy {
+  @HostBinding('@fadeInAnimation') fadeInAnimation = '';
   @ViewChild('sketchPlane', {read: ElementRef}) containerSketch: ElementRef;
   sketchP: p5;
   constructor() { }

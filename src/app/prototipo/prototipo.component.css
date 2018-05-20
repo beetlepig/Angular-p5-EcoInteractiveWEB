@@ -11,7 +11,7 @@
   position: absolute;
   width: 66%;
   left: 16.67%;
-  bottom: 10%;
+  bottom: 12%;
   background: rgba(40,100,150,0.0);
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +24,11 @@
   padding-bottom: 2%;
   background: rgba(118,117,111,0.3);
   border-radius: 50%;
+}
+
+.circulin:hover {
+  cursor: pointer;
+  background: rgba(118,117,111,0.8);
 }
 
 .active {
@@ -39,6 +44,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .imagenOne {

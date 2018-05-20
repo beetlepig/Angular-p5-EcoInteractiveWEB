@@ -2,12 +2,12 @@ import {Component, HostBinding, OnInit} from '@angular/core';
 import {fadeInAnimation} from '../_animations/fade-in.animation';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  selector: 'app-pruebas',
+  templateUrl: './pruebas.component.html',
+  styleUrls: ['./pruebas.component.css'],
   animations: [fadeInAnimation]
 })
-export class HeaderComponent implements OnInit {
+export class PruebasComponent implements OnInit {
   @HostBinding('@fadeInAnimation') fadeInAnimation = '';
 
   constructor() { }

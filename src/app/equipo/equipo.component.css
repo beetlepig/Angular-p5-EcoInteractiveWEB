@@ -1,0 +1,61 @@
+.equipoContainer {
+  position: absolute;
+  top: 30%;
+  width: 50%;
+  background: rgba(30,150,220,0.0);
+  left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.circuloneID {
+  width: 30%;
+  padding-bottom: 30%;
+  background-color: rgba(40,150,280,0.3);
+  border-radius: 48%;
+  border: 0.2vw solid rgba(49,154,212,0.9);
+}
+
+.Carlos {
+  background: rgba(100,200,200,0) url("/assets/mrpig.png") no-repeat center/contain;
+}
+
+.Rodrigo {
+  background: rgba(100,200,200,0) url("/assets/rodri.jpg") no-repeat center/contain;
+}
+
+.Daniela {
+  background: rgba(100,200,200,0) url("/assets/daniela.jpeg") no-repeat center/contain;
+}
+
+.infoIDContainer {
+  position: absolute;
+  width: 50%;
+  top: 61%;
+  left: 25%;
+  background: rgba(200,140,50,0.0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.infoID {
+  width: 30%;
+}
+
+.infoID h5 {
+  margin: auto;
+  text-align: center;
+  font-family: 'Effra', sans-serif;
+  color: rgba(119,118,116,0.9);
+  font-weight: 400;
+  font-size: 1vw;
+}
+.infoID h2 {
+  text-align: center;
+  font-family: 'Effra', sans-serif;
+  color: rgba(47,156,215,1);
+  font-weight: 900;
+  font-size: 1.5vw;
+}

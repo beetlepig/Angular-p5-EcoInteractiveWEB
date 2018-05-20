@@ -32,6 +32,13 @@
   background: rgba(100,200,200,0) url("/assets/rightArrow.svg") no-repeat center/contain;
 }
 
+.circulin {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .circulin:hover{
   box-shadow: 2px 3px 8px rgba(20,20,100,0.3);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+

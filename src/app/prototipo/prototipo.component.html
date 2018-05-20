@@ -1,25 +1,25 @@
 +<div class="contentContainer">
   <div class="imagePlaceHolder">
-    <div *ngIf="slideNumber === 0 && subSlideNumber === 0" class="imagenOne"></div>
-    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" class="imagenTwoOne"></div>
-    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" class="imagenTwoTwo"></div>
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 0" [@fadeSlide] class="imagenOne"></div>
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" [@fadeSlide] class="imagenTwoOne"></div>
+    <div *ngIf="slideNumber === 0 && subSlideNumber === 1" [@fadeSlide] class="imagenTwoTwo"></div>
 
 
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeOne"></div>
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeTwo"></div>
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" class="imagenThreeThree"></div>
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" class="imagenThreeFour"></div>
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" class="imagenThreeFive"></div>
-    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" class="imagenThreeSix"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" [@fadeSlide] class="imagenThreeOne"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" [@fadeSlide] class="imagenThreeTwo"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 0" [@fadeSlide] class="imagenThreeThree"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" [@fadeSlide] class="imagenThreeFour"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" [@fadeSlide] class="imagenThreeFive"></div>
+    <div *ngIf="slideNumber === 1 && subSlideNumber === 1" [@fadeSlide] class="imagenThreeSix"></div>
 
 
-    <div *ngIf="slideNumber === 2 && subSlideNumber === 0" class="imagenFourOne"></div>
-    <div *ngIf="slideNumber === 2 && subSlideNumber === 1" class="imagenFourTwo"></div>
-    <div *ngIf="slideNumber === 2 && subSlideNumber === 1" class="imagenFourThree"></div>
+    <div *ngIf="slideNumber === 2 && subSlideNumber === 0" [@fadeSlide] class="imagenFourOne"></div>
+    <div *ngIf="slideNumber === 2 && subSlideNumber === 1" [@fadeSlide] class="imagenFourTwo"></div>
+    <div *ngIf="slideNumber === 2 && subSlideNumber === 1" [@fadeSlide] class="imagenFourThree"></div>
 
 
-    <div *ngIf="slideNumber === 3 && subSlideNumber === 0" class="imagenFiveOne"></div>
-    <div *ngIf="slideNumber === 3 && subSlideNumber === 1" class="imagenFiveTwo"></div>
+    <div *ngIf="slideNumber === 3 && subSlideNumber === 0" [@fadeSlide] class="imagenFiveOne"></div>
+    <div *ngIf="slideNumber === 3 && subSlideNumber === 1" [@fadeSlide] class="imagenFiveTwo"></div>
 
   </div>
   <h3 class="titleSlide">{{tituloSlide}}</h3>
@@ -27,8 +27,8 @@
 </div>
 
 <div class="circuloContainer">
-  <div [ngClass]="{'active': activado === 0}" class="circulin"></div>
-  <div [ngClass]="{'active': activado === 1}" class="circulin"></div>
-  <div [ngClass]="{'active': activado === 2}" class="circulin"></div>
-  <div [ngClass]="{'active': activado === 3}" class="circulin"></div>
+  <div [ngClass]="{'active': slideNumber === 0}" (click)="changeSlider(0)" class="circulin"></div>
+  <div [ngClass]="{'active': slideNumber === 1}" (click)="changeSlider(1)" class="circulin"></div>
+  <div [ngClass]="{'active': slideNumber === 2}" (click)="changeSlider(2)" class="circulin"></div>
+  <div [ngClass]="{'active': slideNumber === 3}" (click)="changeSlider(3)" class="circulin"></div>
 </div>
