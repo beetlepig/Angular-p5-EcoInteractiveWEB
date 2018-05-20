@@ -7,6 +7,29 @@
   background-color: rgba(100,130,230,0.0);
 }
 
+.circuloContainer {
+  position: absolute;
+  width: 66%;
+  left: 16.67%;
+  bottom: 10%;
+  background: rgba(40,100,150,0.0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.circulin {
+  margin: 0 1%;
+  width: 2%;
+  padding-bottom: 2%;
+  background: rgba(118,117,111,0.3);
+  border-radius: 50%;
+}
+
+.active {
+  background: rgba(49,154,212,0.8);
+}
+
 .imagePlaceHolder {
   width: 100%;
   height: 70%;
@@ -71,7 +94,36 @@
   background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_8.png") no-repeat center/contain;
 }
 
+.imagenFourOne {
+   width: 40%;
+   height: 90%;
+   background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_9.svg") no-repeat center/contain;
+ }
 
+.imagenFourTwo {
+  width: 35%;
+  height: 90%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_10.png") no-repeat center/contain;
+}
+
+
+.imagenFourThree {
+   width: 50%;
+   height: 90%;
+   background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_11.svg") no-repeat center/contain;
+ }
+
+.imagenFiveOne {
+  width: 90%;
+  height: 90%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_12.png") no-repeat center/contain;
+}
+
+.imagenFiveTwo {
+  width: 90%;
+  height: 90%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_13.png") no-repeat center/contain;
+}
 
 .titleSlide {
   margin: 1%;

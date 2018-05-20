@@ -10,6 +10,7 @@ export class PrototipoComponent implements OnInit {
   descripcionSlide: string;
   subSlideNumber: number;
   slideNumber: number;
+  activado: number;
 
   constructor() {
     this.tituloSlide = 'EL SAPO';
@@ -18,30 +19,63 @@ export class PrototipoComponent implements OnInit {
       'información (visual y auditiva) sobre la labor medioambiental de Smurfit Kappa';
     this.slideNumber = 0;
     this.subSlideNumber = 0;
+    this.activado = 0;
   }
 
   ngOnInit() {
     setInterval(() => {
       if (this.slideNumber === 0) {
         this.subSlideNumber++;
+
         if (this.subSlideNumber > 1) {
            this.subSlideNumber = 0;
            this.slideNumber = 1;
            this.tituloSlide = 'COMIENZO';
            this.descripcionSlide = 'Cuando el usuario se ubique entre 1 m y 1.3 m enfrente del sapo, el juego iniciará mostrando una ' +
-             'introduccion de la labor ambiental de Smurfit Kappa, por medio del altavoz y la pantalla.';
+             'introducción de la labor ambiental de Smurfit Kappa, por medio del altavoz y la pantalla.';
+          this.activado = 1;
         }
       } else if (this.slideNumber === 1) {
         this.subSlideNumber++;
-        if(this.subSlideNumber == 1) {
-          this.tituloSlide = 'INTRODUCCION';
-          this.descripcionSlide = 'Mientras el usuario no se ubique en rango, se mostrará la pantalla de la izquierda; Una vez esté en rango, se mostrará la pantalla de la derecha. Una vez dicha toda la informacion, el usuario podrá lanzar';
-        } else if(this.subSlideNumber > 1) {
+        this.activado = 1;
+        if (this.subSlideNumber === 1) {
+          this.tituloSlide = 'INTRODUCCIÓN';
+          this.descripcionSlide = 'Mientras el usuario no se ubique en rango, se mostrará la pantalla de la izquierda; Una vez esté en ' +
+            'rango, se mostrará la pantalla de la derecha. Una vez dicha toda la informacion, el usuario podrá lanzar';
+        } else if (this.subSlideNumber > 1) {
           this.subSlideNumber = 0;
           this.slideNumber = 2;
           this.tituloSlide = 'LANZAR';
-          this.descripcionSlide = 'El usuario debera acertar dos veces la bola en alguno de los bujeros; dependiendo' +
-            ' de los bujeros que acierte, sera su puntaje. Cuando acierte dos veces, se le mostrara informacion de la actual etapa de reciclaje, luego pasará a la siguiente etapa.';
+          this.descripcionSlide = 'El usuario debera acertar dos veces la bola en alguno de los agujeros; dependiendo' +
+            ' de los agujeros que acierte, sera su puntaje.';
+          this.activado = 2;
+        }
+      } else if (this.slideNumber === 2) {
+        this.subSlideNumber++;
+        if (this.subSlideNumber === 1) {
+          this.tituloSlide = 'LANZAR';
+          this.descripcionSlide = 'El usuario despues de acertar dos veces, escuchará información relacionada con la etapa, y ' +
+            'luego pasará a la siguiente etapa de reciclaje';
+        } else if (this.subSlideNumber > 1) {
+          this.subSlideNumber = 0;
+          this.slideNumber = 3;
+          this.tituloSlide = 'ETAPAS';
+          this.descripcionSlide = 'Hay un total de 4 etapas. El usuario tiene que acertar un total de 8 veces para completar el juego.';
+          this.activado = 3;
+        }
+      } else if (this.slideNumber === 3) {
+        this.subSlideNumber++;
+        if (this.subSlideNumber === 1) {
+          this.tituloSlide = 'ETAPAS';
+          this.descripcionSlide = 'Al terminar el juego se mostrará la puntuación y posteriormente el juego se reinicia.';
+        } else if (this.subSlideNumber > 1) {
+          this.subSlideNumber = 0;
+          this.slideNumber = 0;
+          this.tituloSlide = 'EL SAPO';
+          this.descripcionSlide = 'Como prototipo se desarrollo una variante de un juego típico de colombia, el Sapo. Se adaptaron ' +
+            'sensores, un altavoz y una pantalla con el objetivo de brindar una interacción enriquecida al usuario, al tiempo que se le ' +
+            'proporcionada información (visual y auditiva) sobre la labor medioambiental de Smurfit Kappa';
+          this.activado = 0;
         }
       }
 
