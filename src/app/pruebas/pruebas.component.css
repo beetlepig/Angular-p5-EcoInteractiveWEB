@@ -1,0 +1,61 @@
+.containerOfContainers {
+  position: absolute;
+  width: 66.67%;
+  height: 70%;
+  top: 16%;
+  left: 16.66%;
+  background: rgba(230,140,50,0.0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.prototipeImageContainer {
+  width: 37.5%;
+  background: rgba(246,246,246,0.9);
+  outline: 0.1vw solid rgba(49,154,212,0.5);
+  box-shadow: 2px 2px 5px rgba(119,118,116,0.5);
+}
+
+#firstImageLeft {
+  height: 20%;
+  width: 100%;
+  background: rgba(100,200,200,0) url("/assets/imagenesPrototipo/sapon_1.jpeg") no-repeat center/cover;
+}
+
+#secondImageLeft {
+  height: 20%;
+  width: 100%;
+  background: rgba(100,200,200,0) url("/assets/imagenesPrototipo/sapon_2.png") no-repeat top/cover;
+}
+
+#firstImageRight {
+  height: 20%;
+  width: 100%;
+  background: rgba(100,200,200,0) url("/assets/imagenesPrototipo/sapon_3.jpg") no-repeat center/cover;
+}
+
+#secondImageRight {
+  height: 20%;
+  width: 100%;
+  background: rgba(100,200,200,0) url("/assets/piezasSapo/sapin_0.svg") no-repeat center/cover;
+}
+
+.titleVersion {
+  margin: 3%;
+  color: rgba(47,156,215,0.9);
+  font-family: 'Effra', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.versionDescripcion {
+  margin: 6%;
+  color: rgba(119,118,116,0.9);
+  font-family: 'Effra', sans-serif;
+  font-weight: 400;
+  font-size: 1.1vw;
+  text-align: justify;
+}
