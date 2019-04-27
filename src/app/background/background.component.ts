@@ -1,6 +1,6 @@
 import {Component, ElementRef, HostBinding, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import 'p5';
 import {fadeInAnimation} from '../_animations/fade-in.animation';
+import * as p5 from 'p5';
 
 @Component({
   selector: 'app-background',
