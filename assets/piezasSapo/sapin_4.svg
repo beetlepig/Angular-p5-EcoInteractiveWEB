@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.82" height="57.22" viewBox="0 0 94.82 57.22">
+  <defs>
+    <filter id="luminosity-invert-noclip" x="0" y="0" width="94.82" height="57.22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" result="invert"/>
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="invert" in2="bg"/>
+    </filter>
+    <mask id="mask" x="0" y="0" width="94.82" height="57.22" maskUnits="userSpaceOnUse">
+      <g style="filter: url(#luminosity-invert-noclip)">
+        <ellipse cx="66.44" cy="18.8" rx="9.31" ry="9.42" style="fill: #fff"/>
+        <ellipse cx="28.49" cy="18.77" rx="9.31" ry="9.42" style="fill: #fff"/>
+        <path d="M35.5,38.43c.42,2.41,2.1,7.39,8.84,8.76a11.43,11.43,0,0,0,3.83.11c8-1.11,10.42-5.2,11.21-7.68a1.41,1.41,0,0,0-1.07-1.83c-2.47-.4-5.88,2.14-11.21,2.14s-7.64-3-10.28-3.06a1.32,1.32,0,0,0-1.32,1.57Z" style="fill: #fff"/>
+      </g>
+    </mask>
+  </defs>
+  <title>Recurso 8</title>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <g style="opacity: 0.8">
+        <g style="mask: url(#mask)">
+          <g id="Capa_2-2" data-name="Capa 2">
+            <g id="Capa_2-2-2" data-name="Capa 2-2">
+              <rect width="94.82" height="57.22" rx="4.52" ry="4.52" style="fill: #184b80"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

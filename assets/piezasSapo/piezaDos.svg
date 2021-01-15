@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="602" height="377.06" viewBox="0 0 602 377.06">
+  <defs>
+    <filter id="luminosity-invert-noclip" x="0" y="0" width="602" height="377.06" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" result="invert"/>
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="invert" in2="bg"/>
+    </filter>
+    <mask id="mask" x="0" y="0" width="602" height="377.06" maskUnits="userSpaceOnUse">
+      <g style="filter: url(#luminosity-invert-noclip)">
+        <circle cx="470.95" cy="96.51" r="72.07" style="fill: #fff"/>
+        <circle cx="470.95" cy="281.08" r="72.07" style="fill: #fff"/>
+        <circle cx="301" cy="188.53" r="72.07" style="fill: #fff"/>
+        <circle cx="126.41" cy="96.51" r="72.07" style="fill: #fff"/>
+        <circle cx="129.92" cy="281.08" r="72.07" style="fill: #fff"/>
+      </g>
+    </mask>
+  </defs>
+  <title>Recurso 2</title>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <g style="mask: url(#mask)">
+        <rect x="0.5" y="0.5" width="601" height="376.06" style="fill: #319ad4;fill-opacity: 0.2;stroke: #319ad4;stroke-miterlimit: 10;stroke-opacity: 0.30000000000000004"/>
+      </g>
+    </g>
+  </g>
+</svg>
